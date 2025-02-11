@@ -1,0 +1,384 @@
+{
+  "id": "e6eb1f53-ff7f-40bd-9f4e-599481ed5e8e",
+  "version": "2.0",
+  "name": "Pruebas automaticas BuggyCars",
+  "url": "https://buggy.justtestit.org",
+  "tests": [{
+    "id": "8746ccfc-0782-4d99-a22b-f038293f96e1",
+    "name": "Caso1. Registro nuevo usuario ",
+    "commands": [{
+      "id": "d2e914c3-c812-4f1a-b07b-5007f8ce2150",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2dc2173-29ce-4ded-b8cd-1ab96cac42e0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "682a1880-a45e-4dcf-ac3c-0fb61d04a6ea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["css=.btn-success-outline", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//form/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d3cb48e-6916-4139-9809-af5fd7f39b62",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd57909f-660b-4b7b-a680-e058af4c4e20",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/div/form/div/input", "xpath:position"]
+      ],
+      "value": "Michael108"
+    }, {
+      "id": "1fc8f719-ce56-4c49-ba7f-889e12b4e475",
+      "comment": "",
+      "command": "type",
+      "target": "id=firstName",
+      "targets": [
+        ["id=firstName", "id"],
+        ["name=firstName", "name"],
+        ["css=#firstName", "css:finder"],
+        ["xpath=//input[@id='firstName']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Michael"
+    }, {
+      "id": "007a17a2-3e85-42bb-b272-87df2f86794d",
+      "comment": "",
+      "command": "type",
+      "target": "id=lastName",
+      "targets": [
+        ["id=lastName", "id"],
+        ["name=lastName", "name"],
+        ["css=#lastName", "css:finder"],
+        ["xpath=//input[@id='lastName']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Smit"
+    }, {
+      "id": "f29244d3-7c2e-4707-9bae-e31145398351",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Mich2010."
+    }, {
+      "id": "9521ea72-cbb3-4332-bd33-6a65eedfbc34",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirmPassword",
+      "targets": [
+        ["id=confirmPassword", "id"],
+        ["name=confirmPassword", "name"],
+        ["css=#confirmPassword", "css:finder"],
+        ["xpath=//input[@id='confirmPassword']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Mich2010."
+    }, {
+      "id": "118b435e-df51-4ce1-8e30-04a3a8c3c41b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div/div/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e518016-576c-45d8-9680-0fa88aa52e11",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.result",
+      "targets": [
+        ["css=.result", "css:finder"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": "Registration is successful"
+    }]
+  }, {
+    "id": "4d96d9b7-8082-4f97-ac3d-d90ecf5b8eac",
+    "name": "Caso4.Validacion - Modelos populares",
+    "commands": [{
+      "id": "13f92a77-c0a5-428e-abe3-7948de2022e3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1d866b5-f053-4941-9512-6fb1976b32f9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca4beaad-311e-4971-a4e0-4d0ba8f95eec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(2) .img-fluid",
+      "targets": [
+        ["css=.col-md-4:nth-child(2) .img-fluid", "css:finder"],
+        ["xpath=//img[@title='Diablo']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31b0ea19-6485-4acc-a999-4166226a6955",
+      "comment": "",
+      "command": "click",
+      "target": "css=h3",
+      "targets": [
+        ["css=h3", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Diablo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5ddfb70-24d6-41e2-adf1-302013a2d5b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(1) h4",
+      "targets": [
+        ["css=.card:nth-child(1) h4", "css:finder"],
+        ["xpath=//div[3]/div/div/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Specification')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73843869-16c5-4d33-9367-de8a7e9d2ef7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) h4",
+      "targets": [
+        ["css=.card:nth-child(2) h4", "css:finder"],
+        ["xpath=//div[2]/div/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Votes: 1115')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ebbf4b6-2a32-4a46-895d-f6febff39c96",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-6 .img-fluid",
+      "targets": [
+        ["css=.col-lg-6 .img-fluid", "css:finder"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3958ba5a-6d71-48be-9bce-c39daa216f6e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0295bf44-814b-4239-b535-c6c9ff9c46fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(2) .img-fluid",
+      "targets": [
+        ["css=.col-md-4:nth-child(2) .img-fluid", "css:finder"],
+        ["xpath=//img[@title='Diablo']", "xpath:img"],
+        ["xpath=//div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "453a84c8-19e6-4aa7-aa79-cf5e14b087f6",
+    "name": "Caso2.Validaciones - Overall Rating",
+    "commands": [{
+      "id": "8bd98b1b-cc7a-45ad-b12f-ed34020943e2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8497781-d22f-43eb-bfaf-8c99634025e6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "900x1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b48b6ae4-7782-43f7-996b-cc810314b9bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(3) .img-fluid",
+      "targets": [
+        ["css=.col-md-4:nth-child(3) .img-fluid", "css:finder"],
+        ["xpath=//div[3]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04080abc-2a43-4677-8970-cf761ea21181",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) .img-thumbnail",
+      "targets": [
+        ["css=tr:nth-child(4) .img-thumbnail", "css:finder"],
+        ["xpath=//img[@title='Lancia Rally 037']", "xpath:img"],
+        ["xpath=//tr[4]/td/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "790b270c-f0f8-432c-97c8-97a40f925270",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41cf2118-235e-4679-99db-b36c431e6888",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > .center-block",
+      "targets": [
+        ["css=a > .center-block", "css:finder"],
+        ["xpath=//img[@title='Lancia']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09783fd9-3124-41d6-b8a5-f25cbfd3cb02",
+      "comment": "",
+      "command": "click",
+      "target": "css=th:nth-child(2)",
+      "targets": [
+        ["css=th:nth-child(2)", "css:finder"],
+        ["xpath=//th[2]", "xpath:position"],
+        ["xpath=//th[contains(.,'Author')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dece044a-f860-48c9-8a31-51ae61397462",
+      "comment": "",
+      "command": "click",
+      "target": "css=th:nth-child(3)",
+      "targets": [
+        ["css=th:nth-child(3)", "css:finder"],
+        ["xpath=//th[3]", "xpath:position"],
+        ["xpath=//th[contains(.,'Comment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bfa6daee-2f98-4bd7-b0ea-abbed8ee2c2e",
+    "name": "Caso3.Validacion Pagina de Inicio",
+    "commands": [{
+      "id": "2b260ac6-25ae-4cb8-9bcc-b9a969ac0562",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87f06beb-dc64-4736-8d55-bfa71ab2de9f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "870x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0abeea36-3f8c-4132-846f-927091ad5a9d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.center-block > .img-fluid",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e93efbbd-80c0-4131-a11e-18d57671de7c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-md-4:nth-child(1) .card-header",
+      "targets": [],
+      "value": "Popular Make"
+    }, {
+      "id": "d22dbc56-e3f9-4c18-a60e-03fbbd724c0e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-md-4:nth-child(2) .card-header",
+      "targets": [],
+      "value": "Popular Model"
+    }, {
+      "id": "7bcfd695-42d1-480c-888b-de0fa0a75113",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-md-4:nth-child(3) .card-header",
+      "targets": [],
+      "value": "Overall Rating"
+    }, {
+      "id": "8fc99eff-9224-4563-b5e8-bfcd47fd0fb6",
+      "comment": "",
+      "command": "//assertTitle",
+      "target": "Pagina Buggy cars",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "65b2569b-e8c6-48e1-bed3-3bc5da20d0b8",
+    "name": "TEst suite 1 ",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8746ccfc-0782-4d99-a22b-f038293f96e1", "4d96d9b7-8082-4f97-ac3d-d90ecf5b8eac", "bfa6daee-2f98-4bd7-b0ea-abbed8ee2c2e", "453a84c8-19e6-4aa7-aa79-cf5e14b087f6"]
+  }, {
+    "id": "ecd80a6b-8b45-4f85-98e8-ddeab292c153",
+    "name": "Test suite2",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["453a84c8-19e6-4aa7-aa79-cf5e14b087f6", "bfa6daee-2f98-4bd7-b0ea-abbed8ee2c2e"]
+  }, {
+    "id": "deb7cd51-10d3-4449-a691-b3ae49ae4e5d",
+    "name": "Test suite 3",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8746ccfc-0782-4d99-a22b-f038293f96e1", "4d96d9b7-8082-4f97-ac3d-d90ecf5b8eac"]
+  }],
+  "urls": ["https://buggy.justtestit.org/"],
+  "plugins": []
+}
